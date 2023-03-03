@@ -1,0 +1,60 @@
+.page {
+    margin: 0;
+}
+
+.header {
+    height: 74px;
+}
+
+.header__logo {
+    font: 400 26px "Lora", serif;  
+}
+
+.header__navigation {
+    height: 40px;
+}
+
+.header__link {
+    font: 400 12px/1.67 "Oxygen", sans-serif;
+    text-decoration: 0;
+    letter-spacing: 0.6px;
+}
+
+.top-block__title {
+  font: 400 50px/1.02 "Lora", serif;
+  letter-spacing: 2px; 
+}
+
+.top-block__subtitle {
+  font: 400 17px/1.18 "Oxygen", sans-serif;
+}
+
+.footer {
+    height: 89px;
+    background: url(../images/footer_image.jpg) no-repeat;
+}
+
+.footer__shading {
+    height: 89px;
+    background: rgba(35, 47, 56, 0.6);;
+}
+
+.footer__logo {
+    font: 400 26px "Lora", serif; 
+    color: #FFFFFF;
+}
+
+.footer__navigation {
+    height: 32px;
+}
+
+.footer__link {
+  font: 400 11px/2.36 "Oxygen", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: 0;
+  letter-spacing: 0.6px;
+}
+
+
+
+
