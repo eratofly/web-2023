@@ -2,20 +2,20 @@
     height: 360px;
 }
 
-.header__link_color_black {
-   color: #2E2E2E;
+.heading-nav__link_color_black {
+    color: #2E2E2E;
 }
 
-.header__logo_color_black {
-  color: #2E2E2E;
+.heading__logo_color_black {
+    color: #2E2E2E;
 }
 
-.top-block__title_color_white {
-  color: #2E2E2E;
+.top-block__title_color_black {
+    color: #2E2E2E;
 }
 
-.top-block__subtitle_color_white {
-  color: rgba(46, 46, 46, 0.63);
+.top-block__subtitle_color_black {
+    color: rgba(46, 46, 46, 0.63);
 }
 
 .image-the-road-ahead {
@@ -26,6 +26,7 @@
 
 .article-block {
     padding: 140px 240px 135px;
+    background: #F5F5F5;
 }
 
 .article-block__paragraph {

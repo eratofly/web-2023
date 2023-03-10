@@ -2,57 +2,64 @@
     margin: 0;
 }
 
-.header {
+.heading {
     height: 74px;
+    background: #ff2456;  /*НА ВРЕМЯ!!!!!!*/
 }
 
-.header__logo {
-    font: 400 26px "Lora", serif;  
+.heading__logo {
+    font: 400 26px "Lora", serif;
+    color: #FFFFFF;  
 }
 
-.header__navigation {
+.heading-nav {
     height: 40px;
 }
 
-.header__link {
+.heading-nav__link {
     font: 400 12px/1.67 "Oxygen", sans-serif;
     text-decoration: 0;
     letter-spacing: 0.6px;
+    color: #FFFFFF;
 }
 
 .top-block__title {
-  font: 400 50px/1.02 "Lora", serif;
-  letter-spacing: 2px; 
+    font: 400 50px/1.02 "Lora", serif;
+    letter-spacing: 2px; 
+    margin: 0;
+    color: #FFFFFF;
 }
 
 .top-block__subtitle {
-  font: 400 17px/1.18 "Oxygen", sans-serif;
+    font: 400 17px/1.18 "Oxygen", sans-serif;
+    color: rgba(255, 255, 255, 0.63);
 }
 
-.footer {
+.basement {
     height: 89px;
     background: url(../images/footer_image.jpg) no-repeat;
+    background-size: cover;
 }
 
-.footer__shading {
+.basement__shading {
     height: 89px;
     background: rgba(35, 47, 56, 0.6);;
 }
 
-.footer__logo {
+.basement__logo {
     font: 400 26px "Lora", serif; 
     color: #FFFFFF;
 }
 
-.footer__navigation {
+.basement-nav {
     height: 32px;
 }
 
-.footer__link {
-  font: 400 11px/2.36 "Oxygen", sans-serif;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: 0;
-  letter-spacing: 0.6px;
+.basement-nav__link {
+    font: 400 11px/2.36 "Oxygen", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: 0;
+    letter-spacing: 0.6px;
 }
 
 
