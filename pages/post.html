@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>The road ahead</title>
-    <link rel="stylesheet" href="./css/main.css"/>
-    <link rel="stylesheet" href="./css/style_the_road_ahead.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/main.css"/>
+    <link rel="stylesheet" href="static/css/style_post.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body class="page">
       <header class="heading">
@@ -22,7 +22,7 @@
         <span class="top-block__subtitle top-block__subtitle_color_black"> The road ahead might be paved — it might not be.</span>
       </div>
     </div>
-    <img class="image-the-road-ahead" src="images/the_road_ahead.png" alt="Northern lights"/>
+    <img class="image-the-road-ahead" src="static/img/the_road_ahead.png" alt="Northern lights"/>
     <article class="article-block">
       <p class="article-block__paragraph">
         Dark spruce forest frowned on either side the frozen waterway. 
@@ -65,16 +65,23 @@
         pitting themselves against the might of a world as remote and alien and pulseless as the abysses of space.
       </p>
     </article> 
-    <footer class="basement">
-      <div class="basement__shading">
-        <span class="basement__logo">Escape.</span>     
+    <div class="bottom-block">
+      <div class="subscription">
+        <h2 class="subscription__title">Stay in Touch</h2>
+        <form class="subscription-mailing" action="#">
+          <input class="subscription-mailing__email" type="text" placeholder="Enter your email adress">
+          <input class="subscription-mailing__button" type="submit" value="Submit">
+        </form>
+      </div> 
+      <footer class="basement">
+        <span class="basement__logo">Escape.</span>
         <nav class="basement-nav">
           <a class="basement-nav__link" href="">HOME</a>
           <a class="basement-nav__link" href="">CATEGORIES</a>
           <a class="basement-nav__link" href="">ABOUT</a>
           <a class="basement-nav__link" href="">CONTACT</a>
         </nav>
-      </div>
-    </footer> 
+      </footer>    
+    </div>
   </body>
 </html>

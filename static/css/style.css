@@ -1,0 +1,212 @@
+.top-block {
+    height: 500px;
+    background: url(../img/top_block_background.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-block__button {
+    height: 44px;
+    width: 167px;
+    background: #DD783F;
+    border-radius: 3px;
+    border: 0;
+    margin: 31px 0 0 0;
+    font: 400 13px/1.54 "Oxygen", sans-serif;
+    color: #FFFFFF;
+}
+
+.tag-block {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 22px 240px 23px 240px;
+    background: #FFFFFF;
+}
+
+.tag-block__link {
+    font: 400 14px/1.43 "Oxygen", sans-serif;
+    color: #768088;
+    text-decoration: 0;
+}
+
+.posts {
+    background: #F7F7F7;
+}
+
+.featured-posts {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 17% 0 17%;
+}
+
+.featured-posts__title {
+    font: 400 20px/1.35 "Oxygen", sans-serif;
+    padding: 0 0 16px 0;
+    border-bottom: 1px solid #DEDEDE;
+    flex-shrink: 0;
+    width: 188px;
+    margin: 60px 100% 0 100%;
+    text-align: center;
+}
+
+.featured-posts__block {
+    margin: 23px 0 67px 0;
+    display: flex;
+    gap: 25px 20px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.featured-post {
+    height: 280px;
+    width: 460px;
+    border-radius: 3px;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 20px 20px 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+
+}
+
+.featured-post_background_the-road-ahead {
+    background: url(../img/the_road_ahead_index.jpg);
+}
+
+.featured-post_background_from-top-down {
+    background: url(../img/from_top_down.jpg);
+}
+
+.featured-post__title {
+    font: 400 27px/1.11 "Lora", serif;
+    color: #FFFFFF;
+    margin: 0 0 6px 0;
+}
+
+.featured-post__subtitle {
+    font: 400 14px/1.79 "Oxygen", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 12px 0;
+}
+
+.featured-post__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-post__avatar {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  margin: 0 10px 0 0;
+}
+
+.featured-post__author {
+    font: 400 12px/2.92 "Oxygen", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    flex-grow: 1;
+}
+
+.featured-post__date {
+    font: 400 12px/2.92 "Oxygen", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-post__tag {
+    height: 26px;
+    width: 87px;
+    background: #DD783F;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 6px 9px 7px 9px;
+    order: -1;
+    margin: 0 0 111px 0;
+    font: 400 12px/1.08 "Oxygen", sans-serif;
+    color: #FFFFFF;
+}
+
+.most-recent-posts {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 17% 0 17%;
+}
+
+.most-recent-posts__title {
+    font: 400 20px/1.35 "Oxygen", sans-serif;
+    padding: 0 0 16px 0;
+    border-bottom: 1px solid #DEDEDE;
+    width: 188px;
+    flex-shrink: 0;
+    margin: 0 100% 0 100%;
+    text-align: center;
+}
+
+.most-recent-posts__block {
+    margin: 22px 0 108px 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 25px 24px;
+    
+}
+
+.most-recent-post {
+    height: 291px;
+    width: 296px;
+    background: #FFFFFF;
+    display: flex;
+    flex-flow: column;
+}
+
+.most-recent-post__image {
+    height: 150px;
+    width: 296px;
+}
+
+.most-recent-post__title {
+    font: 400 16px/1.31 "Lora", serif;
+    color: #101315;
+    margin: 14px 13px 6px 13px;
+}
+
+.most-recent-post__subtitle {
+    font: 400 13px/1.46 "Oxygen", sans-serif;
+    color: #7A7A7A; 
+    flex-grow: 1; 
+    margin: 0 13px 0 13px;
+}
+
+.most-recent-post__author {
+    font: 400 12px/2.92 "Oxygen", sans-serif;
+    color: #999999;
+    flex-grow: 1;
+    margin: 0 0 0 10px;
+}
+
+.most-recent-post__avatar {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.most-recent-post__date {
+  font: 400 12px/2.92 "Oxygen", sans-serif;
+  color: #999999;
+}
+
+.most-recent-post__info {
+    border-top: 1px solid #EFEFEF;
+    background: #FCFCFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px 0 13px;
+}

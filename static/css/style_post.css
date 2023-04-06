@@ -1,5 +1,9 @@
 .top-block {
     height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading-nav__link_color_black {
@@ -26,10 +30,14 @@
 
 .article-block {
     padding: 140px 240px 135px;
-    background: #F5F5F5;
+    background: #F7F7F7;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px 0;
 }
 
 .article-block__paragraph {
     font: 400 24px/1.46 "Oxygen", sans-serif;
     color: #101315;
+    margin: 0;
 }

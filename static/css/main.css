@@ -1,0 +1,131 @@
+.page {
+    margin: 0;
+}
+
+.heading {
+    width: 100%;
+    margin: 20px 0 0 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.heading__logo {
+    font: 400 26px "Lora", serif; 
+    color: #FFFFFF;  
+}
+
+.heading-nav {
+    width: 26%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;    
+}
+
+.heading-nav__link {
+    font: 400 12px/1.67 "Oxygen", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+}
+
+.top-block__title {
+    font: 400 50px/1.02 "Lora", serif;
+    letter-spacing: 2px; 
+    margin: 0 0 20px 0;
+    color: #FFFFFF;
+}
+
+.top-block__subtitle {
+    font: 400 17px/1.18 "Oxygen", sans-serif;
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.bottom-block {
+    background: url(../img/footer_image.png) no-repeat;
+    background-size: cover;
+    padding: 81px 0 0 0;
+}
+
+.subscription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription__title {
+    font: 400 25px/1.2 "Oxygen", sans-serif;
+    color: #EFEFEF;
+    border-bottom: 1px solid #DEDEDE;
+    width: 188px;
+    padding: 0 0 17px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.subscription-mailing {
+    margin: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-mailing__email {
+    height: 50px;
+    width: 33%;
+    background: #FFFFFF;
+    padding: 0 0 0 35px;
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+    font: 400 12px "Roboto", sans-serif;
+    color: #817F83;
+}
+
+.subscription-mailing__button {
+    height: 50px;
+    width: 9%;
+    background: rgba(255, 255, 255, 0.28);
+    padding: 0;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    font: 400 12px "Roboto", sans-serif;
+    color: #F8F8F8;
+}
+
+.basement {
+    width: 100%;
+    margin: 89px 0 0 0;
+    background: rgba(35, 47, 56, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 31px 0 32px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+
+}
+
+.basement__logo {
+    font: 400 26px "Lora", serif; 
+    color: #FFFFFF;
+}
+
+.basement-nav {
+    width: 19%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: row wrap;
+}
+
+.basement-nav__link {
+    font: 400 11px/2.36 "Oxygen", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    letter-spacing: 0.6px;
+}
+
+
+
+
