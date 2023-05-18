@@ -22,22 +22,23 @@
     color: rgba(46, 46, 46, 0.63);
 }
 
-.image-the-road-ahead {
+.article-block__image-posts {
     height: 534px;
     width: 100%;
-    border-radius: 3px;   
+    border-radius: 3px;
 }
 
 .article-block {
-    padding: 140px 240px 135px;
-    background: #F7F7F7;
     display: flex;
     flex-flow: row wrap;
-    gap: 16px 0;
 }
 
 .article-block__paragraph {
+    background: #F7F7F7;
     font: 400 24px/1.46 "Oxygen", sans-serif;
     color: #101315;
     margin: 0;
+    padding: 140px 240px 135px;
+    white-space: pre-line;
+    text-align: justify;;
 }

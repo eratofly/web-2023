@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <script src="/static/js/admin.js" defer></script>
+    <link rel="stylesheet" href="/static/css/admin.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body class="page">
+    <header class="heading">
+      <div class="heading__logo-position">
+        <span class="heading__logo">Escape.</span>
+        <span class="heading__logo-author">author</span> 
+      </div>
+      <div class="heading__avatar">
+        <span class="heading__avatar-name">N</span>
+      </div>
+      <img src="/static/img/log_out.svg">
+    </header>
+    <div class="new-post">
+      <div>
+        <h1 class="new-post__title">New Post</h1>
+        <span class="new-post__subtitle">Fill out the form bellow and publish your article</span>
+      </div>
+      <button class="new-post__button">Publish</button>  
+    </div>
+    <div class="main-info">
+      <h2 class="main-info__title">Main Information</h2>
+      <div class="main-info__adding-post">
+        <div class="adding-post__post-form">
+          <div class="post-form__setting">
+            <span class="post-form__caption">Title</span>
+            <input class="post-form__text-field" id="post-title" type="text" placeholder="New Post">
+          </div>
+          <div class="post-form__setting">
+            <span class="post-form__caption">Short description</span>
+            <input class="post-form__text-field" id="post-description" type="text" placeholder="Please, enter any description">
+          </div>
+          <div class="post-form__setting">
+            <span class="post-form__caption">Author name</span>
+            <input class="post-form__text-field" id="post-author" type="text">
+          </div>
+          <div class="post-form__setting">
+            <span class="post-form__caption">Author photo</span>
+            <div class="post-form__avatar">
+              <label for="author-photo" class="avatar__add-avatar"><img id="image-camera-avatar" src="/static/img/camera.svg"></label>
+              <label for="author-photo"><span class="avatar__upload-btn">Upload</span></label>
+              <div class="avatar__image-buttons hidden">
+                <div class="image-buttons__upload-new">
+                  <label for="author-photo"><img src="/static/img/camera.svg"></label>
+                  <label for="author-photo"><span class="upload-new__upload-btn">Upload New</span></label>
+                </div>
+                <div id="avatar-remove-btn" class="image-buttons__remove">
+                  <img src="/static/img/trash.svg">
+                  <span class="remove__remove-btn">Remove</span>
+                </div>
+              </div>
+            </div>
+            <input class="hidden" id="author-photo" type="file">
+          </div>
+          <div class="post-form__setting">
+            <span class="post-form__caption">Publish Date</span>
+            <input class="post-form__text-field" id="post-date" type="date">
+          </div>
+          <div class="post-form__setting">
+            <span class="post-form__caption">Article image</span>
+            <label class="post-form__page-image" for="article-image">
+              <div class="page-image__image-signs">
+                <img src="/static/img/camera.svg">
+                <span class="page-image__upload-btn">Upload</span>
+              </div>  
+            </label>
+            <div class="post-form__image-buttons hidden">
+              <div class="image-buttons__upload-new">
+                <label for="article-image"><img src="/static/img/camera.svg"></label>
+                <label for="article-image"><span class="upload-new__upload-btn">Upload New</span></label>
+              </div>
+              <div id="page-image-remove-image" class="image-buttons__remove">
+                <img src="/static/img/trash.svg">
+                <span class="remove__remove-btn">Remove</span>
+              </div>
+            </div>
+            <span class="post-form__description">Size up to 10mb. Format: png, jpeg, gif.</span>
+            <input class="hidden" id="article-image" type="file">
+          </div>   
+        </div>
+        <div class="adding-post__preview">
+          <div class="previw__page-preview">
+            <span class="page-preview__caption">Article preview</span>
+            <div class="page-preview__page-preview-field">
+              <div class="page-preview-field__page-input-field">
+                <div class="page-input-field__ellipses">
+                  <div class="ellipses__ellipse"></div>
+                  <div class="ellipses__ellipse"></div>
+                  <div class="ellipses__ellipse"></div>
+                </div>
+                <span class="page-input-field__title">New Post</span>
+                <span class="page-input-field__subtitle">Please, enter any description</span>
+                <div class="page-input-field__preview-image"></div>
+              </div>
+              <div class="page-preview__vertical-gradient"></div>
+              <div class="page-preview__horizontal-gradient"></div>
+            </div>  
+          </div>
+          <div class="previw__page-preview">
+            <span class="page-preview__caption">Post card preview</span>
+            <div class="page-preview__card-preview-field">
+              <div class="card-preview-field__card-input-field">
+                <div class="card-input-field__preview-image"></div>
+                <span class="card-input-field__title">New Post</span>
+                <span class="card-input-field__subtitle">Please, enter any description</span>
+                <div class="card-input-field__info">
+                  <div class="info__avatar"></div>
+                  <span class="info__author">Enter author name</span>
+                  <span class="info__date">mm/dd/yyyy</span>
+                </div>
+              </div>
+            <div class="page-preview__vertical-gradient"></div>
+            <div class="page-preview__horizontal-gradient"></div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h2 class="content__title">Content</h2>
+      <span class="content__caption">Post content (plain text)</span>
+      <textarea placeholder="Type anything you want..." class="content__text-area"></textarea>
+    </div>
+  </body>
+</html>     

@@ -11,7 +11,7 @@
     <header class="heading">
       <span class="heading__logo">{{ .Title }}.</span>     
       <nav class="heading-nav">
-        <a class="heading-nav__link" href="">HOME</a>
+        <a class="heading-nav__link" href="/home">HOME</a>
         <a class="heading-nav__link" href="">CATEGORIES</a>
         <a class="heading-nav__link" href="">ABOUT</a>
         <a class="heading-nav__link" href="">CONTACT</a>
@@ -37,7 +37,7 @@
         <h2 class="featured-posts__title">Featured Posts</h2>
         <div class="featured-posts__block">
           {{ range .FeaturedPosts }}
-            <div class="featured-post {{ .ImgModifier }}">
+            <a href="{{ .PostURL }}" class="featured-post {{ .ImgModifier }}">
               <h3 class="featured-post__title">{{ .Title }}</h3>            
               <span class="featured-post__subtitle">{{ .Subtitle }}</span>              
               <div class="featured-post__info">
@@ -45,7 +45,7 @@
                 <span class="featured-post__author">{{ .Author }}</span> 
                 <span class="featured-post__date">{{ .PublishDate }}</span>
               </div>
-            </div>
+            </a>
           {{ end }}
         </div>
       </section>
@@ -53,7 +53,7 @@
         <h2 class="most-recent-posts__title">Most Recent</h2>
         <div class="most-recent-posts__block">
           {{ range .MostRecentPosts }}
-          <div class="most-recent-post">
+          <a href="{{ .PostURL }}" class="most-recent-post">
             <img class="most-recent-post__image" src="{{ .ImgPost }}"/>
             <h3 class="most-recent-post__title">{{ .Title }}</h3>
             <span class="most-recent-post__subtitle">{{ .Subtitle }}</span>
@@ -62,7 +62,7 @@
               <span class="most-recent-post__author">{{ .Author }}</span>
               <span class="most-recent-post__date">{{ .PublishDate }}</span>
             </div>
-          </div>
+          </a>
           {{ end }}
         </div>
       </section>
@@ -78,7 +78,7 @@
       <footer class="basement">
         <span class="basement__logo">Escape.</span>
         <nav class="basement-nav">
-          <a class="basement-nav__link" href="">HOME</a>
+          <a class="basement-nav__link" href="/home">HOME</a>
           <a class="basement-nav__link" href="">CATEGORIES</a>
           <a class="basement-nav__link" href="">ABOUT</a>
           <a class="basement-nav__link" href="">CONTACT</a>

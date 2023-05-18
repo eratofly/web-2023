@@ -30,7 +30,7 @@
 .tag-block__link {
     font: 400 14px/1.43 "Oxygen", sans-serif;
     color: #768088;
-    text-decoration: 0;
+    text-decoration: none;
 }
 
 .posts {
@@ -72,6 +72,7 @@
     display: flex;
     justify-content: flex-end;
     flex-flow: column;
+    text-decoration: none;
 
 }
 
@@ -164,6 +165,7 @@
     background: #FFFFFF;
     display: flex;
     flex-flow: column;
+    text-decoration: none;
 }
 
 .most-recent-post__image {
@@ -198,8 +200,8 @@
 }
 
 .most-recent-post__date {
-  font: 400 12px/2.92 "Oxygen", sans-serif;
-  color: #999999;
+    font: 400 12px/2.92 "Oxygen", sans-serif;
+    color: #999999;
 }
 
 .most-recent-post__info {
