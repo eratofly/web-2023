@@ -18,14 +18,25 @@
     <div class="page__login">
       <h1 class="login__title">Log In</h1>
       <div class="login__login-form">
+        <div id="check-fields" class="login-form__error-message message_hidden">
+          <img src="static/img/alert-circle.svg">
+          <span>A-Ah! Check all fields!</span>
+        </div>
+        <div id="warning-password-email" class="login-form__error-message message_hidden">
+          <img src="static/img/alert-circle.svg">
+          <span>Email or password is incorrect.</span>
+        </div>
         <div class="login-form__form-element">
           <span class="form-element__caption">Email</span>
           <input type="email" id="email" class="form-element__field">
+          <span id="email-warning" class="form-element__warning hidden">Email is required.</span>
+          <span id="incorrect-email-warning" class="form-element__warning hidden">Incorrect email format. Correct format is ****@**.***</span>
         </div>
         <div class="login-form__form-element">
           <span class="form-element__caption">Password</span>
           <input type="password" id="password" class="form-element__field">
           <img class="form-element__eye" src="/static/img/eye.svg">
+          <span id="password-warning" class="form-element__warning hidden">Password is required.</span>
         </div>
         <button class="login-form__button">Log In</button>
       </div>

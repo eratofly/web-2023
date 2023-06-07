@@ -16,7 +16,7 @@
       <div class="heading__avatar">
         <span class="heading__avatar-name">N</span>
       </div>
-      <img src="/static/img/log_out.svg">
+      <img id="log_out" src="/static/img/log_out.svg">
     </header>
     <div class="new-post">
       <div>
@@ -25,6 +25,14 @@
       </div>
       <button class="new-post__button">Publish</button>  
     </div>
+    <div class="error-message message_hidden">
+      <img src="static/img/alert-circle.svg">
+      <span>Whoops! Some fields need your attention :o</span>
+    </div>
+    <div class="complete-message message_hidden">
+      <img src="static/img/check-circle.svg">
+      <span>Publish Complete!</span>
+    </div>
     <div class="main-info">
       <h2 class="main-info__title">Main Information</h2>
       <div class="main-info__adding-post">
@@ -32,14 +40,17 @@
           <div class="post-form__setting">
             <span class="post-form__caption">Title</span>
             <input class="post-form__text-field" id="post-title" type="text" placeholder="New Post">
+            <span id="title-warning" class="warning-message hidden">Title is required.</span>
           </div>
           <div class="post-form__setting">
             <span class="post-form__caption">Short description</span>
             <input class="post-form__text-field" id="post-description" type="text" placeholder="Please, enter any description">
+            <span id="description-warning" class="warning-message hidden">Short description is required.</span>
           </div>
           <div class="post-form__setting">
             <span class="post-form__caption">Author name</span>
             <input class="post-form__text-field" id="post-author" type="text">
+            <span id="author-warning" class="warning-message hidden">Author name is required.</span>
           </div>
           <div class="post-form__setting">
             <span class="post-form__caption">Author photo</span>
@@ -57,11 +68,13 @@
                 </div>
               </div>
             </div>
+            <span id="avatar-warning" class="warning-message hidden">Author photo is required.</span>
             <input class="hidden" id="author-photo" type="file">
           </div>
           <div class="post-form__setting">
-            <span class="post-form__caption">Publish Date</span>
+            <span class="post-form__caption">Publish date</span>
             <input class="post-form__text-field" id="post-date" type="date">
+            <span id="date-warning" class="warning-message hidden">Publish date is required.</span>
           </div>
           <div class="post-form__setting">
             <span class="post-form__caption">Article image</span>
@@ -82,7 +95,8 @@
               </div>
             </div>
             <span class="post-form__description">Size up to 10mb. Format: png, jpeg, gif.</span>
-            <input class="hidden" id="article-image" type="file">
+            <input class="hidden" id="article-image" type="file" accept=".jpg,.jpeg,.gif,.png">
+            <span id="page-image-warning" class="warning-message hidden">Article image is required.</span>
           </div>   
         </div>
         <div class="adding-post__preview">
@@ -127,6 +141,7 @@
       <h2 class="content__title">Content</h2>
       <span class="content__caption">Post content (plain text)</span>
       <textarea placeholder="Type anything you want..." class="content__text-area"></textarea>
+      <span id="content-warning" class="warning-message hidden">Content is required.</span>
     </div>
   </body>
 </html>     

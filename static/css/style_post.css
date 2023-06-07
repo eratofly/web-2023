@@ -23,7 +23,7 @@
 }
 
 .article-block__image-posts {
-    height: 534px;
+    max-height: 534px;
     width: 100%;
     border-radius: 3px;
 }
@@ -34,11 +34,14 @@
 }
 
 .article-block__paragraph {
+    box-sizing: border-box;
+    width: 100%;
     background: #F7F7F7;
     font: 400 24px/1.46 "Oxygen", sans-serif;
     color: #101315;
     margin: 0;
-    padding: 140px 240px 135px;
+    padding: 140px 17% 135px;
     white-space: pre-line;
     text-align: justify;;
 }
+
